@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="ja" >
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="はじめてのWebサイト作成">
+    <title>和サイト</title>
+    <link rel="icon" href="favicon.ico">
+    <script async  src="scr/scripts.js"> </script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  </head>
+<body>
+ <header>
+    <div class="top">
+    <div class="header-logo-menu">
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox"  class="nav-unshown" >
+            <label id="nav-open" for="nav-input">
+               <span></span></label>
+            <label id="nav-close"  for="nav-input"  class="nav-unshown"></label>
+
+            <div id="nav-content">
+            <ul class="smt-menu">
+                <li><a href="index.html">ＨＯＭＥ</a></li>
+                <li><a href="tel.html">携帯電話履歴</a></li>
+                <li><a href="line.html">ＬＩＮＥスタンプ</a></li>
+                <li><a  href="about.html">これから作成予定</a></li>
+              </ul>
+          </div>
+      </div>
+  
+    </div>
+
+      <div class="top-img">
+          <img   src="img/header_text.png"    width="210" height="60" alt="アイコン">
+     </div>
+     <span class="top-icon     fas fa-glass-cheers"></span>
+
+      <div class="top-menu">
+      <nav>
+        <ul>
+          <li class="current"><a href="index.html">ＨＯＭＥ</a></li>
+          <li><a href="tel.html">携帯電話履歴</a></li>
+          <li><a href="line.html">ＬＩＮＥスタンプ</a></li>
+          <li><a  href="about.html">これから作成予定</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  </header>
+
+    <!-- -------------------------------  -->
+     <section class="class-main">
+
+      <section class="webstart">
+        <p><span class=standOut>Ｗｅｂサイトはどのようにして作られるのか</span>に興味を持ち つくってみようかと。<br><br>
+          Ｗｅｂサイトの作り方は親切に教えていただけるサイトがたくさんあり助かりました。 <img  class="icon" src="img/kazu.png"    width="100" height="100" alt="アイコン">
+          <br><span class=xstandOut>みなさま、ありがとうございます。</span><br>
+      作成するにあたり、つまづいたところなどを本サイトに記述し思考錯誤しながら作っていく予定です。
+      <br>完成はほど遠いのですが、急がば回れの精神でスローに進んでいこうかなと思っています。
+      <span class="fas fa-glass-cheers"></span>
+     </p>   
+     </section>
+
+     <section class="webcrt">
+       <h1>Webサイト作成のつまづきメモ</h1>
+          <h2>アップロード未反映</h2>
+          <p>画像を変更しサーバーへアップロードしても反映されない</p>
+            <div class="webcrt-s">
+              <h3>状況</h3>
+                <ol>
+                    <li>画像を変更</li>
+                    <li>Firebase Hostingを使用しアップロード</li>
+                    <li>「Deploy complete!」のメッセージ確認</li>
+                    <li>サイト確認</li>
+                    <li>変更後の画像が表示されない</li>
+                  </ol>
+
+              <h3>原因</h3>
+                  <p>HTMLの画像の拡張子 「png」を記述していたが、実ファイル名が大文字の「PNG」だったこと<br>ローカル環境では表示されていたので、アップロードの仕方が原因なのかと解消するまで時間がかかった
+                  </p>
+              <h3>対応策（気を付けること）</h3>
+              <p>大文字、小文字は別文字なので記述には注意すること
+              </p>  
+          </div>
+        
+          <h2>編集ソフト起動不能</h2>
+          <p>サイトつくりには「○○」が良いとのアドバイスによりダウンロードし使用させて頂いたが数日後、起動しなくなった。</p>
+          <div class="webcrt-s">
+              <h3>状況</h3>
+                <ol>
+                </ol>
+
+              <h3>原因</h3>
+                  <p>                   </p>
+              <h3>対応策</h3>
+                  <p> 代わりに「Visual Studio Code」を使用。編集機能がすばらしく              このようなソフトが無料だとは。ありがたい</p>
+          </div>
+ 
+          <h2>CSSの横並び及び表示サイズによるナビリスト表示に苦戦</h2>
+          <p>メニューリストを横並びにきれいに配置するために相当な時間を費やした</p>
+          <div class="webcrt-s">
+              <h3>状況</h3>
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ol>
+
+              <h3>原因</h3>
+                  <p>                   </p>
+              <h3>気を付けること</h3>
+                  <p>                   </p>
+          </div>
+
+          <h2>表示用端末によるナビリスト表示に苦戦</h2>
+          <p>スマートフォンで横並びで作成したナビリストは自動的に縮小されて表示されることに気づき対応に悪戦</p>
+          <div class="webcrt-s">
+              <h3>状況</h3>
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ol>
+
+              <h3>原因</h3>
+                  <p>                   </p>
+              <h3>気を付けること</h3>
+                  <p>                   </p>
+          </div>
+      </section>
+
+    <section class="webcrt">
+     <section class="numchk">
+
+     <h1>数字当てゲーム
+     <span>(MDNサイト参考)</span></h1>
+        
+     <p>10回以内にコンピュータが選んだ数字が当てられるかのゲームです。<br>1〜100の数字を入力し「送信」ボタンを押してチャレンジしてください。</p>   
+     
+        <div class="form"> 
+           <label for="guessField">数字を入力してください：</label>
+           <input class="guessField" type="text" id="guessField" >
+           <input class="guessSubmit" type="submit" value="送信" >
+           <input class="resetButton" type="button" value="新しいゲームを始める" >
+         </div>
+     
+         <div class="resultParas">
+           <p class="t_cnt"></p>
+           <p class="guesses"></p>
+           <p class="lastResult"></p>
+           <p class="lowOrHi"></p>
+         </div>
+
+       
+         </select>
+    </section>
+  </section>
+
+   <section class="webcrt">
+      <h1>問い合わせForm</h1>
+      <p>googleフォームを利用し作成してみました。サイズの変更等はできないのかな？。。。。</p>     
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdjL5zM20g58TOWBsarn2Mnx5lEhr0TRPi_Xc6_ek7i0kGiBw/viewform?embedded=true SameSite=None"
+    </section>
+
+
+  </body>
+</html>
